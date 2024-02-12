@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_list_app/utility/custom_color_scheme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,10 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Shopping List App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         useMaterial3: true,
       ),
-      home: const Text('Shopping List app'),
+      home: Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: CustomColorScheme.primaryExtraLight,
+      ),
     );
   }
 }
