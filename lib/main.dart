@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list_app/utility/custom_color_scheme.dart';
+import 'package:shopping_list_app/utility/custom_text_style.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,13 @@ class MyApp extends StatelessWidget {
       home: Container(
         width: double.infinity,
         height: double.infinity,
-        color: CustomColorScheme.primaryExtraLight,
+        color: CustomColorScheme.primaryColor,
+        child: Center(
+          child: Text(
+            "this is text",
+            style: CustomTextStyle.headerStyle,
+          ),
+        ),
       ),
     );
   }
