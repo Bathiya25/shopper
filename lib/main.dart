@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_list_app/utility/custom_color_scheme.dart';
-import 'package:shopping_list_app/utility/custom_text_style.dart';
+import 'package:shopping_list_app/screens/shopping_list_home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,17 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: Container(
-        width: double.infinity,
-        height: double.infinity,
-        color: CustomColorScheme.primaryColor,
-        child: Center(
-          child: Text(
-            "this is text",
-            style: CustomTextStyle.headerStyle,
-          ),
-        ),
-      ),
+      home: const ShoppingListHomeScreen(),
     );
   }
 }
