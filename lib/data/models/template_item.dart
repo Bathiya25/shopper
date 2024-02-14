@@ -16,7 +16,12 @@ class TemplateItem {
       : id = id ?? uuid.v4();
 }
 
-enum Type {
+enum InputType {
   text,
   number,
 }
+
+const types = {
+  InputType.text: "TEXT",
+  InputType.number: "NUMBER",
+};
