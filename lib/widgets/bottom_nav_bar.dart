@@ -14,6 +14,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       color: CustomColorScheme.primaryColor2,
+      surfaceTintColor: CustomColorScheme.primaryColor2,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
