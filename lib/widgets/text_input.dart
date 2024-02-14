@@ -45,7 +45,7 @@ class TextInput extends StatelessWidget {
           style: CustomTextStyle.smallLabelRegularStyle60,
           cursorColor: CustomColorScheme.secondaryColor,
           autocorrect: false,
-          keyboardType: numbersOnly ? TextInputType.number : TextInputType.none,
+          keyboardType: numbersOnly ? TextInputType.number : TextInputType.text,
           decoration: InputDecoration(
             border: InputBorder.none,
             contentPadding: EdgeInsets.only(
